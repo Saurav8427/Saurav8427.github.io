@@ -1,0 +1,573 @@
+/*
+Orange Color: #e67e22
+Seagreen : #1abc9c
+*/
+
+
+/* ----------------------------------------- */
+/* PRELOADER */
+/* ----------------------------------------- */
+
+
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader  {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 95px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #36ecb9;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* ----------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------- */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    background-color:white;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /* T & B are 0 and L & R are auto */
+}
+
+section { padding: 80px 0; }
+
+.box { padding: 1%; }
+.medal-box { padding: 1%; }
+
+/* ------- HEADINGS ------- */
+
+h1,h2,h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;/* Relative to the font-size defined for 'html' css */
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 110%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #36ecb9;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.section-sports h3::after {
+    display: block;
+    height: 2px;
+    background-color: #36ecb9;
+    content: "";
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+/* ------- PARAGRAPHS ------- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%; /* Same as margin:0 auto (to center the content) */
+    color: #10ac80;
+    padding-bottom: 20px;
+}
+
+.box p {
+    padding: 70% 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #ddd;
+    font-size:200%;
+    line-height: 145%;
+}
+
+.soon {
+    display: none;
+    height: 500px;
+}
+
+/* ------- ICONS ------- */
+.icon-big {
+    text-align: center;
+    margin: auto;
+    font-size: 550%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gold {
+    color: #FFDF00;
+}
+
+.silver {
+    color: #C0C0C0;
+}
+
+.bronze {
+    color: #cd7f32 ;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #333;
+    font-size: 120%;
+
+    /* Secrets to align text & icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ------- GALLERY ------- */
+.gallery {
+    padding: 1%;
+    background: #fff;
+}
+  
+.gallery-cell {
+    border: 2px solid #aaa;
+    border-radius: 1%;
+    text-align: center;
+    width: 24.5%;   
+    height: auto;
+    margin-right: 2%;
+    background-color: #fff;
+}
+
+.gallery-cell-wide {
+    border: 2px solid #aaa;
+    border-radius: 1%;
+    text-align: center;
+    width: 64.8%;
+    height: auto;
+    margin-right: 2%;
+}
+
+/* ----------------------------------------- */
+/* HEADER */
+/* ----------------------------------------- */ 
+
+header {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/running-res.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Image stays at same place */
+    height: 100vh;
+}
+
+header .desc-box {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%; /* Same as margin:0 auto (to center the content) */
+    color: #10ac80;
+    padding-bottom: 20px;
+    color: #a3f6df;
+}
+
+header h1 {
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+/* ----------------------------------------- */
+/* SPORTS */
+/* ----------------------------------------- */ 
+
+.section-sports .long-copy {
+    padding-bottom: 0;
+}
+
+.medal-box p {
+    /* color: #ddd; */
+    color: #333;
+    font-size: 110%;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0 30px;
+}
+
+.medal-box {
+    border-radius: 1%;
+    padding: 4% 0;
+    border: 2px solid #f4f4f4;
+    /* background-color: #0c7d5e; */
+    background-color: #75e0c33d;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.425)), url(img/abstract-shapes-green-min.jpg); */
+    /* background: #05b68a ; 
+    background: linear-gradient(to bottom, #05b68a  0%,#374d47  100%);  */
+    transition: box-shadow 0.2, background-image 0.2s, border 0.2s, background-color 0.2s;
+}
+
+.medal-box:hover {
+    border-radius: 1%;
+    padding: 4% 0;
+    border: 2px solid #999;
+    background-color: #f4f4f4;
+    /* background-color: #1c9c7a; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(img/abstract-shapes-green-min.jpg); */
+    /* background: #05b68acb ; 
+    background: linear-gradient(to bottom, #05b68a77  0%,#374d47  100%);  */
+    /* box-shadow: 0 2px 10px #999; */
+}
+
+.section-sports h3 {
+    padding-top: 4%;
+}
+
+/* ----------------------------------------- */
+/* PROJECTS */
+/* ----------------------------------------- */ 
+
+.projects img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: filter 0.2s;
+}
+
+.project-feature { 
+    display:inline-block;
+    margin-right: 3px;
+    font-size: 100%;
+}
+
+.projects .box {
+    border-radius: 1%;
+    /* background-color: #93f5d9; */
+    background-color: #f3f3f3;
+    padding: 10px;
+    box-shadow: 0 2px 10px #f4f4ff;
+    transition: box-shadow 0.2s, background-color 0.2s, border 0.2s;
+    border: 2px solid #fff;
+}
+
+.projects .box:hover {
+    cursor: pointer;
+    /* background-color: #e3f3ee; */
+    box-shadow: 0 2px 5px #999;
+    border: 2px solid #333;
+}
+
+/* ----------------------------------------- */
+/* CAROUSEL */
+/* ----------------------------------------- */ 
+
+.section-captures-carousel .gallery-cell-wide {
+    background-color: #f4f4f4;
+}
+
+.section-sketches-carousel .gallery-cell-wide {
+    width: 68.35%;
+    padding: 0 1%;
+    background-color: #fff;
+}
+
+.section-origami-carousel .box,
+.section-sketches-carousel .box  {
+    padding: 12px;
+    border-radius: 1%;
+    background-color: #fff;
+}
+
+.section-captures-carousel .box {
+    padding: 12px;
+    border-radius: 1%;
+    background-color: #f4f4f4;
+}
+
+.section-captures-carousel,
+.section-captures-carousel .gallery,
+.section-captures-carousel .gallery-cell { background-color: #f4f4f4; }
+
+/* ----------------------------------------- */
+/* ARTS & CRAFTS */
+/* ----------------------------------------- */ 
+
+.section-origami .box,
+.section-origami .wide-box {
+    padding: 12px;
+    border-radius: 1%;
+    /* background-image:  url(img/abstract-shapes-green-min.jpg); */
+    background-color: #0c7d5e;
+}
+
+.section-captures .box,
+.section-captures .wide-box {
+    padding: 12px;
+    border-radius: 1%;
+    /* background-image:  url(img/canvas-min.jpg); */
+    background-color: #776152;
+}
+
+.section-sketches .box,
+.section-sketches .wide-box {
+    padding: 12px;
+    border-radius: 1%;
+    /* background-image:  url(img/dark-woven-grey-min.jpg); */
+    background-color: #555;
+}
+
+/* ----------------------------------------- */
+/* IMAGES */
+/* ----------------------------------------- */ 
+
+.gallery-cell-wide img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.5s, opacity 0.5s, filter 2s;
+}
+
+.section-origami-carousel img:hover,
+.section-captures-carousel img:hover,
+.section-sketches-carousel img:hover {
+    filter: brightness(1.15);
+}
+
+.section-sketches-carousel img,
+.section-captures-carousel img,
+.section-origami-carousel img,
+.section-origami img,
+.section-captures img,
+.section-sketches img {
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-origami img:hover,
+.section-origami img:active,
+.section-captures img:hover,
+.section-captures img:active,
+.section-sketches img:hover,
+.section-sketches img:active {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.section-captures,
+.section-sports { background-color: #f4f4f4; }
+
+.section-origami img { filter: brightness(1.50); }
+
+.section-sketches img { filter: brightness(1.30); }
+
+header img {
+    margin-left: 15%;
+    width: 20%;
+    height: auto;
+    border-radius: 2px;
+}
+
+/* .wide {
+    display: block;
+    width: 10px;
+    margin: auto;
+} */
+
+/* ----------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------- */ 
+
+footer {
+    text-align: center;
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    margin-top: 7px;
+    margin-left: 5px;
+    text-align: center;
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 40px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.logo-facebook,
+.logo-twitter,
+.logo-google,
+.logo-instagram {
+    transition: color 0.2s;
+}
+
+.logo-facebook:hover { color: #3b5998; }
+
+.logo-twitter:hover { color:#55acee; }   
+
+.logo-google:hover { color: #dd4b39; }
+
+.logo-instagram:hover { color: #835e5b; }
+
+footer p {
+    float: left;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 7%;
+}
+
+/* ----------------------------------------- */
+/* ANIMATIONS */
+/* ----------------------------------------- */ 
+
+.js--wp-1,
+.js--wp-2 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-3,
+.js--wp-4,
+.js--wp-5 { 
+    opacity: 0;
+    animation-duration: 3s; 
+}
+
+.js--wp-1 .animate_animated,
+.js--wp-2 .animate_animated,
+.js--wp-3 .animate_animated,
+.js--wp-4 .animate_animated,
+.js--wp-5 .animate_animated {
+    opacity: 1;
+}

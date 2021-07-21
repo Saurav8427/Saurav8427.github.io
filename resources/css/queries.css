@@ -1,0 +1,245 @@
+
+/* ********** Big tablets to 1200px(width smaller than the 1140px row) ********** */
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { padding: 0 2%; }
+}
+
+
+/* ********** Small tablets to big tablets: from 768 px to 1023px ********** */
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0;}
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%; /* Same as margin:0 auto (to center the content) */
+    }
+
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-step { margin-bottom: 40px;}
+    .works-step:last-of-type { margin-bottom: 60px; }
+
+    .icon-small { 
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .city-feature { font-size: 90%;}
+
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan-price { font-size: 250%; }
+
+    .contact-form { width: 80%;}
+}
+
+
+/* ********** Small phones to small tablets: from 481 to 767px ********** */
+
+@media only screen and (max-width: 867px) {
+
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* .section-origami .box,
+    .section-captures .box,
+    .section-sketches .box { 
+        border-right: 2.5vw white solid; 
+    } */
+
+    .section .row:last-child {
+        padding: 3% 0;
+    }
+
+    .section-origami .box img,
+    .section-captures .box img,
+    .section-sketches .box img {
+        display: block;
+        margin: auto;
+        width: 190px;
+        height: 320px;
+        opacity: 1;
+    }
+    
+    .section-origami .box img:hover,
+    .section-captures .box img:hover,
+    .section-sketches .box img:hover {
+        transform: scale(1.075);
+    }
+
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+
+    .row{ 
+        padding: 0 5%; 
+        margin: 0 auto;
+    }
+    
+    .col { 
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+
+    .gallery-cell {
+        width: 43%;   
+        height: auto;
+    }
+
+    .section-origami-carousel .row:last-of-type,
+    .section-captures-carousel .row:last-of-type,
+    .section-sketches-carousel .row:last-of-type {
+        padding-bottom: 5%;
+    }
+
+    .gallery-cell-wide {
+        border: 2px solid #aaa;
+        border-radius: 1%;
+        text-align: center;
+        width: 64.8%;
+        height: auto;
+        margin-right: 2%;
+    }
+
+    .gallery-cell-wide img {
+        width: 100%;
+        height: auto;
+        opacity: 0.9;
+        transition: transform 0.5s, opacity 0.5s, filter 2s;
+    }
+
+    .section-sports .col {
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+
+    .projects .col {
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+    
+    .wide-box {
+        width: 100%;
+    }
+
+    .wide-box img {
+        width: 100%;
+    }
+
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 2%;
+    }
+
+
+
+    /*************** Carousel ***********/
+
+    /* .section-captures-carousel .box {
+        padding: ;
+    } */
+
+    .section-origami-carousel .box,
+    .section-sketches-carousel .box  {
+        border-radius: 1%;
+    }
+
+    .section-captures-carousel .gallery-cell-wide {
+        margin-top: 13.5%;
+    }
+
+    .section-sketches-carousel .gallery-cell-wide {
+        margin-top: 10.5%;
+        padding-top: 4%;
+    }
+
+    .gallery-cell {
+        padding-top: 3%;
+        height: auto;
+    }
+
+    .gallery-cell-wide {
+        padding-top: 3.5%;
+        height: auto;
+    }
+
+}
+
+
+/* ********** Small phones from 0 to 480px ********** */
+
+@media only screen and (max-width: 480px) {
+
+    /* .section-origami .box img,
+    .section-captures .box img,
+    .section-sketches .box img  {
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        transform: scale(1.1);
+    } */
+
+    .loader  {
+        top: calc(40vh - 125px);
+        left: calc(50vw - 85px);
+    }
+
+    .section-captures-carousel .box {
+        padding: 0;
+    }
+
+    .section-origami-carousel .box,
+    .section-sketches-carousel .box  {
+        padding: 0;
+        border-radius: 1%;
+    }
+
+    .section-captures-carousel .gallery-cell-wide {
+        margin-top: 33.5%;
+        width: 100%;
+    }
+
+    .section-sketches-carousel .gallery-cell-wide {
+        margin-top: 33.5%;
+        width: 100% ;
+        padding: 0 1%;
+    }
+
+    .gallery-cell {
+        margin-right: 10%;
+        width: 80%;   
+        height: auto;
+        padding-top: 5%;
+    }
+
+    .gallery-cell-wide {
+        width: 84.8%;
+        height: auto;
+        margin-right: 10%;
+    }
+
+    .gallery-cell-wide img {
+        padding-top: 7%;
+    }
+
+    .col { 
+        width: 100%;
+    }
+
+    body { font-size: 15px; }
+    section { padding: 25px 0; }
+    .contact-form { width: 100%; }
+    .social-links { float: left; }
+}
