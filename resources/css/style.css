@@ -353,16 +353,23 @@ header h1 {
 /* CAROUSEL */
 /* ----------------------------------------- */ 
 
+.section-captures-carousel, 
+.section-origami-carousel,
+.section-sketches-carousel {
+    height: 100%;
+    padding-bottom: 0;
+}
+
 .section-captures-carousel .gallery-cell-wide {
     background-color: #f4f4f4;
-    background-size: contain;
+    /* background-size: contain; */
 }
 
 .section-sketches-carousel .gallery-cell-wide {
     width: 68.35%;
     padding: 0 1%;
     background-color: #fff;
-    background-size: contain;
+    /* background-size: contain; */
     
 }
 
@@ -371,7 +378,7 @@ header h1 {
     padding: 12px;
     border-radius: 1%;
     background-color: #fff;
-    background-size: contain;
+    /* background-size: contain; */
     
 }
 
@@ -379,13 +386,13 @@ header h1 {
     padding: 12px;
     border-radius: 1%;
     background-color: #f4f4f4;
-    background-size: contain;
+    /* background-size: contain; */
 
 }
 
 .section-captures-carousel,
 .section-captures-carousel .gallery,
-.section-captures-carousel .gallery-cell { background-color: #f4f4f4; background-size: contain;}
+.section-captures-carousel .gallery-cell { background-color: #f4f4f4; /*background-size: contain;*/}
 
 /* ----------------------------------------- */
 /* ARTS & CRAFTS */
@@ -397,7 +404,7 @@ header h1 {
     border-radius: 1%;
     /* background-image:  url(img/abstract-shapes-green-min.jpg); */
     background-color: #0c7d5e;
-    background-size: contain;
+    /* background-size: contain; */
 }
 
 .section-captures .box,
@@ -406,7 +413,7 @@ header h1 {
     border-radius: 1%;
     /* background-image:  url(img/canvas-min.jpg); */
     background-color: #776152;
-    background-size: contain;
+    /* background-size: contain; */
 }
 
 .section-sketches .box,
@@ -415,7 +422,7 @@ header h1 {
     border-radius: 1%;
     /* background-image:  url(img/dark-woven-grey-min.jpg); */
     background-color: #555;
-    background-size: contain;
+    /* background-size: contain; */
 }
 
 /* ----------------------------------------- */
