@@ -98,19 +98,19 @@ $(document).ready(function() {
     $('.js--wp-3').waypoint(function(direction) {
         $('.js--wp-3').addClass('animate__animated animate__fadeInLeft');
     }, {
-        offset: '10%'
+        offset: '55%'
     });
 
     $('.js--wp-4').waypoint(function(direction) {
         $('.js--wp-4').addClass('animate__animated animate__fadeInLeft');
     }, {
-        offset: '10%'
+        offset: '55%'
     });
 
     $('.js--wp-5').waypoint(function(direction) {
         $('.js--wp-5').addClass('animate__animated animate__fadeInLeft');
     }, {
-        offset: '10%'
+        offset: '55%'
     });
 
 
