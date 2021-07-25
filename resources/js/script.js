@@ -96,19 +96,19 @@ $(document).ready(function() {
     });
 
     $('.js--wp-3').waypoint(function(direction) {
-        $('.js--wp-3').addClass('animate__animated animate__fadeInBottomLeft');
+        $('.js--wp-3').addClass('animate__animated animate__fadeInLeft');
     }, {
         offset: '30%'
     });
 
     $('.js--wp-4').waypoint(function(direction) {
-        $('.js--wp-4').addClass('animate__animated animate__fadeInBottomLeft');
+        $('.js--wp-4').addClass('animate__animated animate__fadeInLeft');
     }, {
         offset: '30%'
     });
 
     $('.js--wp-5').waypoint(function(direction) {
-        $('.js--wp-5').addClass('animate__animated animate__fadeInBottomLeft');
+        $('.js--wp-5').addClass('animate__animated animate__fadeInLeft');
     }, {
         offset: '30%'
     });
