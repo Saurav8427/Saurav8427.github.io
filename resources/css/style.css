@@ -359,7 +359,9 @@ header h1 {
 
 .section-sketches-carousel .gallery-cell-wide {
     width: 68.35%;
-    padding: 0 1%;
+    height: 100%;
+    padding-bottom: 0;
+    /* padding: 0 1%; */
     background-color: #fff;
 }
 
@@ -414,8 +416,10 @@ header h1 {
 
 .gallery-cell-wide img {
     width: 100%;
-    height: auto;
-    opacity: 0.9;
+    height: 100%;
+    padding-bottom: 0;
+    /* height: auto; */
+    /* opacity: 0.9; */
     transition: transform 0.5s, opacity 0.5s, filter 2s;
 }
 
@@ -433,7 +437,9 @@ header h1 {
 .section-sketches img {
     opacity: 0.9;
     width: 100%;
-    height: auto;
+    height: 100%;
+    padding-bottom: 0;   
+    /* height: auto; */
     vertical-align: middle;
     transition: transform 0.5s, opacity 0.5s;
 }
