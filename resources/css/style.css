@@ -353,15 +353,8 @@ header h1 {
 /* CAROUSEL */
 /* ----------------------------------------- */ 
 
-.section-captures-carousel, 
-.section-origami-carousel,
-.section-sketches-carousel {
-    height: 100%;
-    padding-bottom: 0;
-}
-
 .section-captures-carousel .gallery-cell-wide {
-    background-color: #f4f4f4;
+    background-color: #c4bdbd;
     /* background-size: contain; */
 }
 
