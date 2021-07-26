@@ -413,9 +413,14 @@ header h1 {
 /* ----------------------------------------- */ 
 
 .gallery-cell-wide img {
-    width: 100%;
+    /* width: 100%;
     height: auto;
-    opacity: 0.9;
+    opacity: 0.9; */
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    /* dim unselected */
+    opacity: 0.7;
     transition: transform 0.5s, opacity 0.5s, filter 2s;
 }
 
@@ -431,11 +436,18 @@ header h1 {
 .section-origami img,
 .section-captures img,
 .section-sketches img {
-    opacity: 0.9;
+    /* opacity: 0.9;
     width: 100%;
     height: auto;
     vertical-align: middle;
+    transition: transform 0.5s, opacity 0.5s; */
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    /* dim unselected */
+    opacity: 1;
     transition: transform 0.5s, opacity 0.5s;
+
 }
 
 .section-origami img:hover,
